@@ -1,0 +1,81 @@
+/* Estilos para o Menu - Isolados */
+#menu {
+    padding-top: 70px; /* Espaçamento para evitar que o conteúdo fique embaixo do menu fixo */
+}
+
+#menu h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#menu .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+#menu .card:hover {
+    transform: scale(1.05);
+}
+
+#menu .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+#menu .card-body {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+}
+
+#menu .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#menu .card-text {
+    font-size: 1rem;
+    color: #777;
+}
+
+#menu .card-body p {
+    margin-bottom: 10px;
+}
+
+#menu .table th,
+#menu .table td {
+    padding: 10px;
+    text-align: center;
+}
+
+#menu .table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#menu .table td {
+    background-color: #f9f9f9;
+}
+
+#menu .table tr:nth-child(even) td {
+    background-color: #f1f1f1;
+}
+
+#menu .table tr:hover {
+    background-color: #e2e2e2;
+}
+
+@media (max-width: 767px) {
+    #menu h2 {
+        font-size: 2rem;
+    }
+
+    #menu .card {
+        margin-bottom: 20px;
+    }
+}
