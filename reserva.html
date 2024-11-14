@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/personalizado.css">
+	<link rel="stylesheet" href="css/reserva.css">
+    <title>Restaurante</title>
+    <style>
+        /* Adicionando a imagem de fundo à seção de reserva */
+        #reservar {
+            background-image: url('imagem/salmon.jpg'); /* Coloque o caminho da sua imagem */
+            background-size: cover;
+            background-position: center;
+            padding: 60px 0; /* Adiciona um padding para separar o conteúdo da borda */
+            color: white; /* Define a cor do texto para branco, para contraste com a imagem */
+        }
+
+        #reservar h2 {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para o título ficar mais visível sobre a imagem */
+        }
+
+        /* Opcional: Ajusta a transparência dos campos de input */
+        #reservar input, #reservar textarea {
+            background-color: rgba(255, 255, 255, 0.7); /* Faz com que os campos fiquem levemente transparentes */
+            color: #333;
+        }
+
+        #reservar button {
+            background-color: #007bff; /* Cor personalizada do botão */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top menu" id="mainNavbar">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="imagem/logo.png" alt="Logo do Restaurante" class="logo-img" height="80" width="200">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Pagina Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pprincipal.html">Prato Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobremesa.html">Sobremesa</a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link" href="bebidas.html">Bebiidas</a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link" href="bebidas.html.html">Reseva</a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção de Reserva -->
+    <section id="reservar" class="container my-5">
+        <h2 class="text-center">Faça Sua Reserva</h2>
+        <form id="formReserva">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Seu Nome" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Seu E-mail" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="data">Data da Reserva</label>
+                    <input type="date" class="form-control" id="data" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="hora">Hora da Reserva</label>
+                    <input type="time" class="form-control" id="hora" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comentarios">Comentários</label>
+                <textarea class="form-control" id="comentarios" rows="3" placeholder="Deixe seus comentários ou pedidos especiais"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Reservar Agora</button>
+        </form>
+    </section>
+
+    <!-- Modal de Confirmação -->
+    <div class="modal fade" id="modalConfirmacao" tabindex="-1" role="dialog" aria-labelledby="modalConfirmacaoLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalConfirmacaoLabel">Confirmação de Reserva</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Sua reserva foi realizada com sucesso!</p>
+                    <p>Em breve entraremos em contato para mais detalhes.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+  	
+	<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- Coluna 1: Informações do Restaurante -->
+            <div class="col-md-4">
+                <h5>Sobre o Restaurante</h5>
+                <p>
+                    Nosso restaurante oferece uma experiência única com pratos preparados com os melhores ingredientes. 
+                    Venha nos visitar e experimente a qualidade e sabor em cada refeição.
+                </p>
+            </div>
+
+            <!-- Coluna 2: Links de Navegação -->
+            <div class="col-md-4">
+                <h5>Links Rápidos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html">Pagina Principal</a></li>
+                    <li><a href="pprincipal.html">Prato Principal</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="bebidas.html.html">Reseva</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+                </ul>
+				
+            </div>
+
+            <!-- Coluna 3: Redes Sociais -->
+            <div class="col-md-4">
+                <h5>Siga-nos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>&copy; 2024 Restaurante Sabora da Terra. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        // Captura o envio do formulário
+        document.getElementById('formReserva').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio do formulário
+            $('#modalConfirmacao').modal('show'); // Exibe o modal
+        });
+    </script>
+</body>
+</html>

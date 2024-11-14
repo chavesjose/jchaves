@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/personalizado.css">
+	<link rel="stylesheet" href="css/reserva.css">
+    <title>Restaurante</title>
+    <style>
+        /* Estilo para a seção de Bebidas */
+        #bebidas {
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #333;
+            border-radius: 8px;
+        }
+
+        /* Título da seção Bebidas */
+        #bebidas h2 {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        /* Estilo para as bebidas */
+        #bebidas .bebida-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Efeito de hover nas bebidas */
+        #bebidas .bebida-item:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Imagem da bebida */
+        #bebidas .bebida-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* Nome e preço da bebida */
+        #bebidas .bebida-item span {
+            font-size: 22px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        /* Descrição da bebida */
+        #bebidas .bebida-item p {
+            font-size: 16px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top menu" id="mainNavbar">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                   <img src="imagem/logo.png" alt="Logo do Restaurante" class="logo-img" height="80" width="200">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Pagina Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pprincipal.html">Prato Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobremesa.html">Sobremesa</a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link" href="bebidas.html">Bebiidas</a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link" href="bebidas.html.html">Reseva</a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção de Bebidas -->
+	  <h2 style="text-align: center">Bebidas</h2>
+    <section id="bebidas">
+      
+
+        <!-- Bebida 1 -->
+        <div class="bebida-item">
+            <img src="imagem/bebida/2m.jpg" alt="Coca-Cola">
+            <span>2M</span>
+            
+            <span>MT 100.00 MZZ</span>
+        </div>
+
+        <!-- Bebida 2 -->
+        <div class="bebida-item">
+            <img src="imagem/bebida/manica.jpg" alt="Coca-Cola">
+            <span>MANICA</span>
+            
+            <span>MT 100.00 MZN</span>
+        </div>
+
+        <!-- Bebida 3 -->
+        <div class="bebida-item">
+            <img src="imagem/bebida/savana.jpg" alt="Coca-Cola">
+            <span>SAVANA</span>
+            
+            <span>MT 120.00 MZN</span>
+        </div>
+
+        <!-- Bebida 4 -->
+        <div class="bebida-item">
+            <img src="imagem/bebida/unter.jpg" alt="Coca-Cola">
+            <span>HUNTER`S GOLD</span>
+            
+            <span>MT 110.00</span>
+        </div>
+		
+		<!-- Bebida 5 -->
+        <div class="bebida-item">
+           <img src="imagem/bebida/vinho.jpg" alt="Coca-Cola">
+            <span>VINHO DE MESA</span>
+           
+            <span>MT 1000.00 MZN</span>
+        </div>
+		
+		<!-- Bebida 6 -->
+        <div class="bebida-item">
+           <img src="imagem/bebida/Whisky.jpg" alt="Coca-Cola">
+            <span>Whisky </span>
+            
+            <span>MT 500.00</span>
+        </div>
+    </section>
+
+    <!-- Footer -->
+	
+	<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- Coluna 1: Informações do Restaurante -->
+            <div class="col-md-4">
+                <h5>Sobre o Restaurante</h5>
+                <p>
+                    Nosso restaurante oferece uma experiência única com pratos preparados com os melhores ingredientes. 
+                    Venha nos visitar e experimente a qualidade e sabor em cada refeição.
+                </p>
+            </div>
+
+            <!-- Coluna 2: Links de Navegação -->
+            <div class="col-md-4">
+                <h5>Links Rápidos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html">Pagina Principal</a></li>
+                    <li><a href="pprincipal.html">Prato Principal</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="bebidas.html.html">Reseva</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+                </ul>
+				
+            </div>
+
+            <!-- Coluna 3: Redes Sociais -->
+            <div class="col-md-4">
+                <h5>Siga-nos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>&copy; 2024 Restaurante Sabora da Terra. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

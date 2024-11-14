@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/personalizado.css">
+    <link rel="stylesheet" href="css/reserva.css">
+    <title>Restaurante</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top menu" id="mainNavbar">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="imagem/logo.png" alt="Logo do Restaurante" class="logo-img" height="80" width="200">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Pagina Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pprincipal.html">Prato Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobremesa.html">Sobremesa</a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link" href="bebidas.html">Bebiidas</a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link" href="bebidas.html.html">Reseva</a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção de Contato -->
+    <section id="contato" class="container my-5">
+        <h2 class="text-center mb-4">Entre em Contato Conosco</h2>
+        <form id="formContato">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Seu Nome" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Seu E-mail" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" class="form-control" id="telefone" placeholder="Seu Telefone" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="assunto">Assunto</label>
+                    <select class="form-control" id="assunto" required>
+                        <option value="" disabled selected>Escolha um Assunto</option>
+                        <option value="geral">Dúvida Geral</option>
+                        <option value="reservas">Reservas</option>
+                        <option value="sugestoes">Sugestões</option>
+                        <option value="reclamações">Reclamações</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea class="form-control" id="mensagem" rows="4" placeholder="Sua Mensagem" required></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <!-- Modal de Confirmação -->
+    <div class="modal" id="modalConfirmacao" tabindex="-1" role="dialog" aria-labelledby="modalConfirmacaoLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalConfirmacaoLabel">Mensagem Enviada</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Sua mensagem foi enviada com sucesso. Agradecemos pelo seu contato. Em breve entraremos em contato com você!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Sobre o Restaurante</h5>
+                    <p>Nosso restaurante oferece uma experiência única com pratos preparados com os melhores ingredientes. Venha nos visitar e experimente a qualidade e sabor em cada refeição.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Cardápio</a></li>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Siga-nos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                        <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2024 Restaurante Exemplo. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        // Captura o envio do formulário
+        document.getElementById('formContato').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio real do formulário
+
+            // Exibe o modal de confirmação
+            $('#modalConfirmacao').modal('show');
+
+            // Limpa os campos do formulário após o envio
+            document.getElementById('formContato').reset();
+        });
+    </script>
+
+</body>
+</html>

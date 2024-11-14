@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/personalizado.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <title>Restaurante</title>
+	<style>
+		/* Estilo dos cards do menu */
+		main {
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  flex-wrap: wrap;
+		  margin-top: 2rem;
+		}
+		.card-menu {
+		  margin: 1rem;
+		  width: 16rem;
+		  background: #fff;
+		  color: #444;
+		  text-align: center;
+		  border-radius: 1rem;
+		  box-shadow: 0.5rem 0.5rem 1rem rgba(51, 51, 51, 0.2);
+		  overflow: hidden;
+		  transition: all 0.3s ease;
+		}
+		.card-menu:hover {
+		  transform: scale(1.05);
+		}
+		.card-header {
+		  height: 5rem;
+		  font-weight: 700;
+		  font-size: 1rem;
+		  padding: 1rem 0;
+		  color: #fff;
+		  clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+		}
+		.card-menu img {
+		  width: 100%;
+		  height: 150px;
+		  object-fit: cover;
+		}
+		.card-body {
+		  padding: 1rem;
+		}
+		.card-body h5 {
+		  font-size: 1.2rem;
+		  font-weight: 700;
+		  margin: 0.5rem 0;
+		}
+		.card-body p {
+		  font-size: 0.9rem;
+		  color: #666;
+		}
+		.card-menu .btn-order {
+		  margin-top: 1rem;
+		  padding: 0.6rem 1.2rem;
+		  color: #fff;
+		  border-radius: 1rem;
+		  font-size: 0.9rem;
+		  font-weight: 600;
+		  background-color: #06c766;
+		  border: none;
+		  transition: all 0.3s ease;
+		}
+		.card-menu .btn-order:hover {
+		  background-color: #04a455;
+		}
+	</style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top menu" id="mainNavbar">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                   <img src="imagem/logo.png" alt="Logo do Restaurante" class="logo-img" height="80" width="200">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Pagina Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pprincipal.html">Prato Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobremesa.html">Sobremesa</a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link" href="bebidas.html">Bebiidas</a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link" href="bebidas.html.html">Reseva</a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Área do Menu -->
+    <main>
+       <div class="card-menu">
+   <img src="imagem/menu/gourmet.jpg"> 
+    <div class="card-body">
+        <h5>Bruschetta</h5>
+        <p>Uma seleção de entradas leves para abrir o apetite.</p>
+        <p><strong>Preço: MZN 210.00</strong></p>
+        <button class="btn-order">Pedir agora</button>
+    </div>
+</div>
+
+<div class="card-menu">
+    <img src="imagem/menu/file.jpg"> 
+    <div class="card-body">
+        <h5>Filé ao Molho Madeira</h5>
+        <p>Um prato saboroso com ingredientes frescos e de alta qualidade.</p>
+        <p><strong>Preço: MZN 300.00</strong></p>
+        <button class="btn-order">Pedir agora</button>
+    </div>
+</div>
+
+<div class="card-menu">
+   <img src="imagem/menu/tiramisu.jpg">      
+    <div class="card-body">
+        <h5>Cheesecake de Morango</h5>
+        <p>Finalize sua refeição com uma deliciosa sobremesa.</p>
+        <p><strong>Preço: MZN 150.00 </strong></p>
+        <button class="btn-order">Pedir agora</button>
+    </div>
+</div>
+
+<div class="card-menu">
+    <img src="imagem/menu/salmon.jpg">  
+    <div class="card-body">
+        <h5>Salada Caprese</h5>
+        <p>Uma seleção de entradas leves para abrir o apetite.</p>
+        <p><strong>Preço: MZN 350.00</strong></p>
+        <button class="btn-order">Pedir agora</button>
+    </div>
+</div>
+
+<div class="card-menu">
+    <img src="imagem/menu/shrimp.jpg">  
+    <div class="card-body">
+        <h5>Risoto de Camarão</h5>
+        <p>Um prato saboroso com ingredientes frescos e de alta qualidade.</p>
+        <p><strong>Preço: MZN 400.00</strong></p>
+        <button class="btn-order">Pedir agora</button>
+    </div>
+</div>
+
+<div class="card-menu">
+    <img src="imagem/menu/desserts.jpg">  
+    <div class="card-body">
+        <h5>Tiramisu</h5>
+        <p>Finalize sua refeição com uma deliciosa sobremesa.</p>
+        <p><strong>Preço: MZN 00.00</strong></p>
+        <button class="btn-order">Pedir agora</button>
+    </div>
+</div>
+
+<div class="card-menu">
+  <img src="imagem/menu/pavlova.jpg">  
+    <div class="card-body">
+        <h5>Pudim de Leite</h5>
+        <p>Finalize sua refeição com uma deliciosa sobremesa.</p>
+        <p><strong>Preço: MZN 200.00</strong></p>
+        <button class="btn-order">Pedir agora</button>
+    </div>
+</div>
+
+<div class="card-menu">
+    <img src="imagem/menu/ice-cream.jpg">  
+    <div class="card-body">
+        <h5>Brownie com Sorvete</h5>
+        <p>Finalize sua refeição com uma deliciosa sobremesa.</p>
+        <p><strong>Preço: MZN 100.00</strong></p>
+        <button class="btn-order">Pedir agora</button>
+    </div>
+</div>
+
+    </main>
+
+    <!-- Rodapé -->
+  	
+	<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- Coluna 1: Informações do Restaurante -->
+            <div class="col-md-4">
+                <h5>Sobre o Restaurante</h5>
+                <p>
+                    Nosso restaurante oferece uma experiência única com pratos preparados com os melhores ingredientes. 
+                    Venha nos visitar e experimente a qualidade e sabor em cada refeição.
+                </p>
+            </div>
+
+            <!-- Coluna 2: Links de Navegação -->
+            <div class="col-md-4">
+                <h5>Links Rápidos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html">Pagina Principal</a></li>
+                    <li><a href="pprincipal.html">Prato Principal</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="bebidas.html.html">Reseva</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+                </ul>
+				
+            </div>
+
+            <!-- Coluna 3: Redes Sociais -->
+            <div class="col-md-4">
+                <h5>Siga-nos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>&copy; 2024 Restaurante Sabora da Terra. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
